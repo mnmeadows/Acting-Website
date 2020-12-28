@@ -134,7 +134,7 @@
 	<div id="desktopgalleryheader">
 		<video autoplay loop muted src="img/Gallery.mp4"></video>
 	</div>
-	<div id="multi-item-carousel" class="carousel slide carousel-multi-item">
+	<div id="multi-item-carousel" class="carousel slide carousel-multi-item" data-interval="false">
 		<ol class="carousel-indicators">
 			<li data-target="#multi-item-carousel" data-slide-to="0" class="active"></li>
 			<li data-target="#multi-item-carousel" data-slide-to="1"></li>
@@ -267,19 +267,24 @@
 		</div>
 		<!-- SECOND PAGE -->
 		<div class="carousel-item">
-			<div class="modal fade" id="img7" tabindex="-1" aria-labelledby="img7Label" aria-hidden="true" role="dialog">
-				<div class="modal-dialog modal-dialog-centered">
-					<div class="modal-content">
-						<div class="modal-header">
-							<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
-							</button>
-						</div>
-						<div class="modal-body d-flex justify-content-center">
-							<img src="img/img5_thumb.png" alt="Catch Me If You Can" height="90%" width="90%">
-						</div>
-						<div class="modal-footer">
-							<h6>Catch Me If You Can</h6>
+			<div class="flex-wrap">
+				<button type="button" data-toggle="modal" data-target="#img7">
+					<img src="img/img1_thumb.png" alt="Starlight Express" height="171px" width="171px">
+				</button>
+				<div class="modal fade" id="img7" tabindex="-1" aria-labelledby="img1Label" aria-hidden="true" role="dialog">
+					<div class="modal-dialog modal-dialog-centered">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+							<div class="modal-body d-flex justify-content-center">
+								<img src="img/img1_thumb.png" alt="Starlight Express" height="90%" width="90%">
+							</div>
+							<div class="modal-footer">
+								<h6>Starlight Express</h6>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -292,9 +297,10 @@
   		</a>
 	</div>
 </div>
+	
 <!-- VIDEOS -->
 <div id="videos" class="desktop d-flex flex-row">
-	<div id="videocarousel" class="carousel slide" data-interval="false">
+	<div id="videocarousel" class="carousel slide flex-fill" data-interval="false">
 		<ol class="carousel-indicators">
 			<li data-target="#videocarousel" data-slide-to="0" class="active">
 				<img src="img/thumbnail1.png" alt="img">
