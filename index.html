@@ -7,7 +7,7 @@
 	<meta name="keywords" content="actress, actor, theatre, talent, singer, dancer, musician, Marissa Meadows, Marissa, Meadows, Lindenwood">
 	<meta name="author" content="Marissa Meadows">
 	
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="CSS/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/cif2wqi.css">
 
@@ -71,7 +71,7 @@
 </nav>
 	
 <!-- HOME -->
-<section class="page-content" data-spy="scroll" data-target="#navbar" data-offset="0">
+<section class="page-content" data-spy="scroll" data-target="#navbar" data-offset="300">
 <div id="home" class="mainimage mobile">
 	<img class="img-fluid" src="img/MarissaMeadows.png" alt="Marissa Meadows">
 </div>
@@ -100,6 +100,8 @@
     			<li data-target="#carouselindicators" data-slide-to="0" class="active"></li>
     			<li data-target="#carouselindicators" data-slide-to="1"></li>
     			<li data-target="#carouselindicators" data-slide-to="2"></li>
+				<li data-target="#carouselindicators" data-slide-to="3"></li>
+<!--				<li data-target="#carouselindicators" data-slide-to="4"></li>-->
   			</ol>
 			<div class="carousel-inner">
     			<div class="carousel-item active">
@@ -108,11 +110,19 @@
 					</video>
     			</div>
     			<div class="carousel-item">
-					<p>Marissa is originally from Monument, Colorado but is currently pursuing a BFA in Acting at Lindenwood University in St. Charles, Missouri.</p>
+					<p>I grew up in Monument, Colorado where I started out doing theatre summer camps before slowly letting it take over all of my time in high school.</p>
     			</div>
     			<div class="carousel-item">
-      				<p>She is also a graphic design minor and spends her free time traveling and playing piano.</p>
+      				<p>I am currently pursuing my Bachelor of Fine Arts in Acting at Lindenwood University in St. Charles, Missouri.</p>
     			</div>
+				<div class="carousel-item">
+      				<p>In my spare time I work on getting a graphic design minor and polishing my piano pieces.</p>
+    			</div>
+<!--
+				<div class="carousel-item">
+					<h5>Take a look at my full bio <a href="PDF BIO" target="_blank">here</a></h5>
+    			</div>
+-->
   			</div>
   			<a class="carousel-control-prev" href="#carouselindicators" role="button" data-slide="prev">
     			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -132,221 +142,346 @@
 <!-- GALLERY -->
 <div id="gallery" class="desktop d-flex flex-row">
 	<div id="desktopgalleryheader">
-		<video autoplay loop muted src="img/Gallery.mp4"></video>
+		<video autoplay loop muted src="img/gallery.mp4"></video>
 	</div>
-	<div id="multi-item-carousel" class="carousel slide carousel-multi-item" data-interval="false">
-		<ol class="carousel-indicators">
-			<li data-target="#multi-item-carousel" data-slide-to="0" class="active"></li>
-			<li data-target="#multi-item-carousel" data-slide-to="1"></li>
-		</ol>
-		<div class="carousel-inner">
-		<!-- FIRST PAGE -->
-		<div class="carousel-item active">
-			<div id="gallerypicsdesktop" class="flex-wrap">
-				<button type="button" data-toggle="modal" data-target="#img1">
-					<img src="img/img1_thumb.png" alt="Starlight Express" height="171px" width="171px">
-				</button>
-				<div class="modal fade" id="img1" tabindex="-1" aria-labelledby="img1Label" aria-hidden="true" role="dialog">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body d-flex justify-content-center">
-								<img src="img/img1_thumb.png" alt="Starlight Express" height="90%" width="90%">
-							</div>
-							<div class="modal-footer">
-								<h6>Starlight Express</h6>
-							</div>
-						</div>
-					</div>
+	<div id="gallerypicsdesktop" class="d-flex flex-wrap">
+		<!-- Images  -->
+		<div class="row">
+			<div class="column">
+				<div class="overlay">
+					<img src="img/1Headshot4.jpg" alt="Headshot" onclick="openModal();currentSlide(1)" class="hover-shadow">
 				</div>
-				<button type="button" data-toggle="modal" data-target="#img2">
-					<img src="img/img2_thumb.png" alt="The Purrfect Crime" height="171px" width="171px">
-				</button>
-				<div class="modal fade" id="img2" tabindex="-1" aria-labelledby="img2Label" aria-hidden="true" role="dialog">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body d-flex justify-content-center">
-								<img src="img/img2_thumb.png" alt="The Purrfect Crime" height="90%" width="90%">
-							</div>
-							<div class="modal-footer">
-								<h6>The Purrfect Crime</h6>
-							</div>
-						</div>
-					</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/2Headshot5.jpg" alt="Headshot" onclick="openModal();currentSlide(2)" class="hover-shadow">
 				</div>
-				<button type="button" data-toggle="modal" data-target="#img3">
-					<img src="img/img3_thumb.png" alt="Little Women" height="171px" width="171px">
-				</button>
-				<div class="modal fade" id="img3" tabindex="-1" aria-labelledby="img3Label" aria-hidden="true" role="dialog">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body d-flex justify-content-center">
-								<img src="img/img3_thumb.png" alt="Little Women" height="90%" width="90%">
-							</div>
-							<div class="modal-footer">
-								<h6>Little Women</h6>
-							</div>
-						</div>
-					</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/3Headshot3.jpg" alt="Headshot" onclick="openModal();currentSlide(3)" class="hover-shadow">
 				</div>
-				<button type="button" data-toggle="modal" data-target="#img4">
-					<img src="img/img4_thumb.png" alt="Little Women" height="171px" width="171px">
-				</button>
-				<div class="modal fade" id="img4" tabindex="-1" aria-labelledby="img4Label" aria-hidden="true" role="dialog">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body d-flex justify-content-center">
-								<img src="img/img4_thumb.png" alt="Little Women" height="90%" width="90%">
-							</div>
-							<div class="modal-footer">
-								<h6>Little Women</h6>
-							</div>
-						</div>
-					</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/4Headshot6.jpg" alt="Headshot" onclick="openModal();currentSlide(4)" class="hover-shadow">
 				</div>
-				<button type="button" data-toggle="modal" data-target="#img5">
-					<img src="img/img5_thumb.png" alt="Catch Me If You Can" height="171px" width="171px">
-				</button>
-				<div class="modal fade" id="img5" tabindex="-1" aria-labelledby="img5Label" aria-hidden="true" role="dialog">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body d-flex justify-content-center">
-								<img src="img/img5_thumb.png" alt="Catch Me If You Can" height="90%" width="90%">
-							</div>
-							<div class="modal-footer">
-								<h6>Catch Me If You Can</h6>
-							</div>
-						</div>
-					</div>
+			</div>
+			<div class="column large x">
+				<div class="overlay">
+					<img src="img/24Headshot2.jpg" alt="Headshot" onclick="openModal();currentSlide(5)" class="hover-shadow">
 				</div>
-				<button type="button" data-toggle="modal" data-target="#img6">
-					<img src="img/img6_thumb.png" alt="The Importance of Being Earnest" height="171px" width="171px">
-				</button>
-				<div class="modal fade" id="img6" tabindex="-1" aria-labelledby="img6Label" aria-hidden="true" role="dialog">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body d-flex justify-content-center">
-								<img src="img/img6_thumb.png" alt="The Importance of Being Earnest" height="90%" width="90%">
-							</div>
-							<div class="modal-footer">
-								<h6>The Importance of Being Earnest</h6>
-							</div>
-						</div>
-					</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/5Nightmare2.jpg" alt="The Actor's Nightmare" onclick="openModal();currentSlide(6)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/6Earnest1.png" alt="The Importance of Being Earnest" onclick="openModal();currentSlide(7)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/7-12Night2.jpg" alt="Twelfth Night" onclick="openModal();currentSlide(8)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/8CatchMe2.png" alt="Catch Me If You Can" onclick="openModal();currentSlide(9)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/9LittleWomen1.png" alt="Little Women" onclick="openModal();currentSlide(10)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/10Crime2.jpg" alt="The Purrfect Crime" onclick="openModal();currentSlide(11)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/11Starlight1.png" alt="Starlight Express" onclick="openModal();currentSlide(12)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/12Earnest2.jpg" alt="The Importance of Being Earnest" onclick="openModal();currentSlide(13)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column medium">
+				<div class="overlay">
+					<img src="img/13Crime1.png" alt="The Purrfect Crime" onclick="openModal();currentSlide(14)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column medium">
+				<div class="overlay">
+					<img src="img/15LittleWomen2.jpg" alt="Little Women" onclick="openModal();currentSlide(15)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column medium x">
+				<div class="overlay">
+					<img src="img/16LittleWomen4.png" alt="LittleWomen" onclick="openModal();currentSlide(16)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column medium x">
+				<div class="overlay">
+					<img src="img/18-12Night1.jpg" alt="Twelfth Night" onclick="openModal();currentSlide(17)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column large x">
+				<div class="overlay">
+					<img src="img/20LittleWomen5.jpg" alt="Little Women" onclick="openModal();currentSlide(18)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column large x">
+				<div class="overlay">
+					<img src="img/22Nightmare1.jpg" alt="The Actor's Nightmare" onclick="openModal();currentSlide(19)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column large x">
+				<div class="overlay">
+					<img src="img/17CatchMe1.jpg" alt="Catch Me If You Can" onclick="openModal();currentSlide(20)" class="hover-shadow">
 				</div>
 			</div>
 		</div>
-		<!-- SECOND PAGE -->
-		<div class="carousel-item">
-			<div class="flex-wrap">
-				<button type="button" data-toggle="modal" data-target="#img7">
-					<img src="img/img1_thumb.png" alt="Starlight Express" height="171px" width="171px">
-				</button>
-				<div class="modal fade" id="img7" tabindex="-1" aria-labelledby="img1Label" aria-hidden="true" role="dialog">
-					<div class="modal-dialog modal-dialog-centered">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								</button>
-							</div>
-							<div class="modal-body d-flex justify-content-center">
-								<img src="img/img1_thumb.png" alt="Starlight Express" height="90%" width="90%">
-							</div>
-							<div class="modal-footer">
-								<h6>Starlight Express</h6>
-							</div>
-						</div>
+		<!-- The Modal/Lightbox -->
+		<div id="gallerymodal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<img src="img/1Headshot4.jpg" alt="Headshot">
+				</div>
+				<div class="mySlides">
+					<img src="img/2Headshot5.jpg" alt="Headshot">
+				</div>
+				<div class="mySlides">
+					<img src="img/3Headshot3.jpg" alt="Headshot">
+				</div>
+				<div class="mySlides">
+					<img src="img/4Headshot6.jpg" alt="Headshot">
+				</div>
+				<div class="mySlides large">
+					<img src="img/24Headshot2.jpg" alt="Headshot">
+				</div>
+				<div class="mySlides">
+					<img src="img/5Nightmare2.jpg" alt="The Actor's Nightmare">
+					<div class="modal-footer">
+						<h6>The Actor's Nightmare</h6>
 					</div>
 				</div>
+				<div class="mySlides">
+					<img src="img/6Earnest1.png" alt="The Importance of Being Earnest">
+					<div class="modal-footer">
+						<h6>The Importance of Being Earnest</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/7-12Night2.jpg" alt="Twelfth Night">
+					<div class="modal-footer">
+						<h6>Twelfth Night</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/8CatchMe2.png" alt="Catch Me If You Can">
+					<div class="modal-footer">
+						<h6>Catch Me If You Can</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/9LittleWomen1.png" alt="Little Women">
+					<div class="modal-footer">
+						<h6>Little Women</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/10Crime2.jpg" alt="The Purrfect Crime">
+					<div class="modal-footer">
+						<h6>The Purrfect Crime</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/11Starlight1.png" alt="Starlight Express">
+					<div class="modal-footer">
+						<h6>Starlight Express</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/12Earnest2.jpg" alt="The Importance of Being Earnest">
+					<div class="modal-footer">
+						<h6>The Importance of Being Earnest</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/13Crime1.png" alt="The Purrfect Crime">
+					<div class="modal-footer">
+						<h6>The Purrfect Crime</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/15LittleWomen2.jpg" alt="Little Women">
+					<div class="modal-footer">
+						<h6>Little Women</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/16LittleWomen4.png" alt="Little Women">
+					<div class="modal-footer">
+						<h6>Little Women</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/18-12Night1.jpg" alt="Twelfth Night">
+					<div class="modal-footer">
+						<h6>Twelfth Night</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/20LittleWomen5.jpg" alt="Little Women">
+					<div class="modal-footer">
+						<h6>Little Women</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/22Nightmare1.jpg" alt="The Actor's Nightmare">
+					<div class="modal-footer">
+						<h6>The Actor's Nightmare</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/17CatchMe1.jpg" alt="Catch Me If You Can">
+					<div class="modal-footer">
+						<h6>Catch Me If You Can</h6>
+					</div>
+				</div>
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 			</div>
 		</div>
-		</div>
-		<a class="carousel-control-next" href="#multi-item-carousel" role="button" data-slide="next">
-    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
-    		<span class="sr-only">Next</span>
-  		</a>
 	</div>
 </div>
-	
+
 <!-- VIDEOS -->
 <div id="videos" class="desktop d-flex flex-row">
-	<div id="videocarousel" class="carousel slide flex-fill" data-interval="false">
+	<div id="videocarousel" class="carousel flex-fill" data-interval="false">
 		<ol class="carousel-indicators">
 			<li data-target="#videocarousel" data-slide-to="0" class="active">
 				<img src="img/thumbnail1.png" alt="img">
 			</li>
 			<li data-target="#videocarousel" data-slide-to="1">
-				<img src="img/thumbnail2.png" alt="img">
-			</li>
-			<li data-target="#videocarousel" data-slide-to="2">
 				<img src="img/thumbnail3.png" alt="img">
 			</li>
 		</ol>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<iframe src="https://www.youtube.com/embed/X78BgiYezsk" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/X78BgiYezsk?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="d-flex flex-fill"></iframe>
 			</div>
 			<div class="carousel-item">
-				<iframe src="https://www.youtube.com/embed/IJGLvbSzO7M?start=19" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-			</div>
-			<div class="carousel-item">
-				<iframe src="https://www.youtube.com/embed/h4Dp6KGSjH4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<iframe src="https://www.youtube.com/embed/h4Dp6KGSjH4?rel=0" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>
 		</div>
-		<a class="carousel-control-prev" heref="#videocarousel" role="button" data-slide="prev">
-			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-			<span class="sr-only">Previous</span>
-		</a>
-		<a class="carousel-control-next" href="#videocarousel" role="button" data-slide="next">
-			<span class="carousel-control-next-icon" aria-hidden="true"></span>
-			<span class="sr-only">Next</span>
-		</a>
+		<a class="carousel-control-prev" href="#videocarousel" role="button" data-slide="prev">
+    		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    		<span class="sr-only">Previous</span>
+  		</a>
+  		<a class="carousel-control-next" href="#videocarousel" role="button" data-slide="next">
+    		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    		<span class="sr-only">Next</span>
+  		</a>
 	</div>
 	<div id="desktopvideosheader">
 		<video autoplay loop muted src="img/Videos.mp4"></video>
 	</div>
 </div>
-
-
+	
+<div id="bottom" class="d-flex flex-row">
 <!-- RECENT NEWS -->
 <div id="recentnews" class="desktop d-flex flex-row">
-	<div id="recentnewsvideo">
-		<video autoplay loop muted width="85%">
-			<source src="img/Recent-News.mp4">
-		</video>
-	</div> 
+	<div id="newsindicators" class="carousel slide" data-interval="false">
+  			<ol class="carousel-indicators">
+    			<li data-target="#newsindicators" data-slide-to="0" class="active"></li>
+    			<li data-target="#newsindicators" data-slide-to="1"></li>
+    			<li data-target="#newsindicators" data-slide-to="2"></li>
+				<li data-target="#newsindicators" data-slide-to="3"></li>
+  			</ol>
+			<div class="carousel-inner">
+    			<div class="carousel-item active">
+					<div id="container">
+						<video autoplay loop muted id="newsvideo">
+							<source src="img/Recent-News.mp4">
+						</video>
+					</div>
+    			</div>
+    			<div class="carousel-item">
+					<div class="newstext">
+						<div class="news-section d-flex flex-column">
+							<div class="date">
+								<h3>February 2021</h3>
+							</div>
+							<div class="line">
+								<img src="img/Line.png" alt="Line">
+							</div>
+							<div class="news-p">
+								<p>UPCOMING: Cast as Saranda in Kurt Gerard Heinlein's <span style="font-style: italic">Evangeline Drowning</span>, directed by Lindenwood University's John O'Hagan.</p>
+							</div>
+						</div>
+					</div>
+    			</div>
+    			<div class="carousel-item">
+					<div class="newstext">
+						<div class="news-section d-flex flex-column">
+							<div class="date">
+								<h3>December 2020</h3>
+							</div>
+							<div class="line">
+								<img src="img/Line.png" alt="Line">
+							</div>
+							<div class="news-p">
+								<p>Streamed a Zoom performance of Timothy Henderson Jr.'s one act, <span style="font-style: italic">The Movie Theater</span>, directed by student Ian Flemming, in which Marissa played Bernie Henson.</p>
+							</div>
+						</div>
+					</div>
+    			</div>
+				<div class="carousel-item">
+					<div class="newstext">
+						<div class="news-section d-flex flex-column">
+							<div class="date">
+								<h3>November 2019</h3>
+							</div>
+							<div class="line">
+								<img src="img/Line.png" alt="Line">
+							</div>
+							<div class="news-p">
+								<p>Collegiate debut performing as Ellen Terry in Christopher Durang's one act, <span style="font-style: italic">The Actor's Nightmare</span>, directed by student Bethany Miscannon, during Lindenwood University's Fall Play Fest.</p>
+							</div>
+						</div>
+					</div>
+    			</div>
+  			</div>
+  			<a class="carousel-control-prev" href="#newsindicators" role="button" data-slide="prev">
+    			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Previous</span>
+  			</a>
+  			<a class="carousel-control-next" href="#newsindicators" role="button" data-slide="next">
+    			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+    			<span class="sr-only">Next</span>
+  			</a>
+		</div>
 </div>
-	
+
+<!-- RESUME -->
+<div id="resume" class="desktop d-flex flex-row">
+	<img class="cropped" src="img/family-tree.jpg" alt="Family Tree Pic">
+	<div id="resumetext">
+		<h4>see my complete resume <a href="Resume.pdf" target="_blank">here</a></h4>
+	</div>
+</div>
+
+</div>
 </section>
 	
 <!-- CONTACT ME -->
@@ -377,5 +512,6 @@
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="CSS/plugin.js"></script>
 </body>
 </html>

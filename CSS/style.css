@@ -18,10 +18,12 @@ font-family: futura-pt, sans-serif;
 	font-style: normal
 
 /* GLOBAL */
+* {
+	scroll-behavior: smooth
+}
 html {
 	height: 100%;
 	overflow: hidden;
-	scroll-behavior: smooth !important
 }
 body {
 	height: 100%;
@@ -29,7 +31,6 @@ body {
 	/* MNM: keep header and footer from scrolling by making this hidden instead of auto*/
 	overflow: hidden;
 	position: relative;
-	scroll-behavior: smooth
 }
 @media only screen and (min-width: 768px) {
 	.mobile {
@@ -52,7 +53,8 @@ body {
 /* NAVIGATION BAR */
 /* MOBILE */
 nav {
-	background-color: #373A40
+	background-color: #373A40;
+	flex-shrink: 0
 }
 .navbar-brand {
 	font-family: number-five-smooth, sans-serif;
@@ -259,8 +261,28 @@ h2 {
 	height: 373px;
 	padding: 0 5px 0 5px
 }
+.aboutme .carousel-item h5 {
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #373A40;
+	font-size: 24px;
+	text-align: center;
+	padding: 67% 10px 0;
+	width: 233px;
+	height: 373px;
+}
+.aboutme .carousel-item h5 a {
+	font-family: number-five-smooth, sans-serif;
+	font-size: 33px;
+	padding-left: 5px;
+	color: #1F3F42;
+}
+.aboutme .carousel-item h5 a:hover {
+	opacity: .5
+}
 .aboutme .carousel-control-prev {
-	margin-left: -14%;
+	margin-left: -16%;
 }
 .aboutme .carousel-control-next {
 	margin-right: -14%
@@ -284,6 +306,15 @@ h2 {
 		height: 364px;
 		font-size: 29px
 	}
+	.aboutme .carousel-item h5 {
+		width: 300px;
+		height: 364px;
+		font-size: 30px;
+		padding-top: 52%
+	}
+	.aboutme .carousel-item h5 a {
+		font-size: 40px
+	}
 }
 @media only screen and (min-width: 411px) {
 	#aboutmelong {
@@ -303,6 +334,14 @@ h2 {
 		width: 341px;
 		height: 424px;
 		font-size: 32px
+	}
+	.aboutme .carousel-item h5 {
+		width: 341px;
+		height: 424px;
+		font-size: 35px
+	}
+	.aboutme .carousel-item h5 a {
+		font-size: 44px
 	}
 }
 @media only screen and (min-height: 812px) {
@@ -324,6 +363,12 @@ h2 {
 		height: 519px;
 		font-size: 33px
 	}
+	.aboutme .carousel-item h5 {
+		width: 300px;
+		height: 519px;
+		font-size: 33px;
+		padding-top: 70%
+	}
 }
 /* DESKTOP */
 #aboutme {
@@ -340,6 +385,9 @@ h2 {
 	min-width: 100%;
 	height: auto;
 }
+.carousel-control-prev:focus, .carousel-control-next:focus {
+	display: none
+}
 @media only screen and (min-width: 768px){
 	.aboutme .carousel {
 		height: 558px;
@@ -352,7 +400,15 @@ h2 {
 	.aboutme .carousel-item p {
 		width: 396px;
 		height: 554px;
-		padding: 0 20px 0 20px
+		padding: 0 25px 0 25px
+	}
+	.aboutme .carousel-item h5 {
+		width: 396px;
+		height: 554px;
+		padding: 57% 40px 0 40px
+	}
+	.aboutme .carousel-item h5 a {
+		font-size: 50px
 	}
 	.aboutme .carousel-control-prev {
 		margin-left: -4%
@@ -430,50 +486,99 @@ h2 {
 }
 #gallerypics {
 	align-items: center;
+	justify-content: space-around;
+	margin: 20px
+}
+#gallerypics .row {
 	justify-content: space-around
 }
-button:focus {
-	outline: none
+#gallerypics .column {
+	margin: 10px 10px 20px 10px
 }
-button img {
-	margin: 10px 8px 10px 8px;
-	box-shadow: 0px 0px 8px 0px rgba(0,0,0,.3);
-	max-width: 171px;
-	max-height: 171px;
+#gallerymodal .mySlides img {
+	width: 90%;
+	height: 90%;
+	margin: 0 auto
+}
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 20;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: #000000ed
+}
+#gallerymodal .mySlides {
 	display: flex;
-	align-content: center
-}
-button {
-	border: none;
-	background: none
-}
-.modal-header {
-	border-bottom: none
-}
-.close {
-	color: #BDBBC1;
-	text-shadow: 0 1px 0 #000;
-	opacity: 1
-}
-.close:hover {
-	color: #BDBBC1
-}
-.modal-body {
-	padding: 0px;
-}
-.modal-body img {
-	justify-content: center;
+	flex-direction: column
 }
 .modal-content {
+	position: relative;
 	background-color: transparent !important;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
 	border: none
+}
+.close {
+  	color: #BDBBC1;
+	text-shadow: 0 1px 0 #000;
+	opacity: 1;
+  	position: absolute;
+  	top: 38px;
+ 	right: 30px;
+ 	font-size: 35px;
+  	font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  	color: #999;
+  	text-decoration: none;
+  	cursor: pointer;
+}
+.mySlides {
+  	display: none;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -50px;
+  color: #BDBBC1;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+#gallerymodal a:not([href]) {
+	color: #BDBBC1
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  color: #999
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+.hover-shadow:hover {
+  box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .modal-footer {
 	border: none;
 	justify-content: center
-}
-#img1, #img2, #img3, #img4, #img5, #img6 {
-	background-color: rgba(0,0,0,0.64)
 }
 h6 {
 	color: #BDBBC1;
@@ -487,17 +592,64 @@ h6 {
 #gallery {
 	flex: 1 1 auto;
 	overflow: auto;
-	background-color: #b2ded6;
-	border: 2px solid #373A40
-}
-#gallerypicsdesktop {
-	justify-content: space-around;
+	background-color: #B2DED6;
+	border: 2px solid #373A40;
+	height: 754px
 }
 @media only screen and (min-width: 768px) {
 	#gallery video {
 		display: flex;
-		height: 530px;
+		width: 219px;
 	}
+}
+#desktopgalleryheader {
+	display: flex;
+	background-color: #494c54;
+	align-items: center
+}
+#gallerypicsdesktop .mySlides img {
+	width: 575px
+}
+#gallerypicsdesktop .row {
+	margin: 33px 0;
+	justify-content: center;
+}
+#gallerypicsdesktop .overlay {
+	background-color: black
+}
+#gallerypicsdesktop .column img:hover {
+	opacity: 0.7
+}
+#gallerypicsdesktop .row .medium, .large, .huge  {
+	display: none 
+}
+@media only screen and (min-width: 888px) {
+	#gallerypicsdesktop .row .medium {
+		display: flex;
+	}
+}
+@media only screen and (min-width: 1059px) {
+	#gallerypicsdesktop .row .large {
+		display: flex;
+	}
+}
+@media only screen and (min-width: 1230px) {
+	#gallerypicsdesktop .row .huge {
+		display: flex;
+	}
+}
+@media only screen and (min-width: 1401px) {
+	#gallerypicsdesktop .column img {
+		width: 228px !important;
+		height: 228px !important
+	}
+	#gallerypicsdesktop .row .x {
+		display: none
+	}
+}
+.column img {
+	width: 171px;
+	height: 171px
 }
 
 /* VIDEOS */
@@ -521,6 +673,10 @@ h6 {
 	#videoheadermobile {display: none}
 	#videoheaderlong {display: flex}
 	#videoheader {background-color: #42444B}
+}
+#videocarousel .carousel {
+	width: 78vw;
+	height: auto
 }
 #videocarousel {
 	margin-top: 15px
@@ -558,21 +714,34 @@ h6 {
 	width: 10%
 }
 #videocarousel iframe {
-	width: 78vw;
+	width: 64vw;
 	height: 315px
 }
-
 /* DESKTOP */
 #videos {
 	background-color: #FFDBC6;
 	display: flex;
-	justify-content: end;
+	justify-content: center;
 	height: 534px;
 	border: 2px solid #373A40
 }
-
+#videos #videocarousel .carousel-indicators {
+	top: 350px
+}
+#videos #videocarousel iframe {
+	margin-top: 40px
+}
+#videos .carousel-control-prev, #videos .carousel-control-next {
+	bottom: 100px
+}
 #desktopvideosheader video {
 	height: 530px
+}
+#videos #videocarousel .carousel-control-prev {
+	left: -8px
+}
+#videos #videocarousel .carousel-control-next {
+	right: -8px
 }
 
 /* RECENT NEWS */
@@ -593,7 +762,7 @@ h3 {
 	padding-top: 12px;
 	font-size: 34px
 }
-.news-section {
+#news .news-section {
 	border: 9px double #173D42;
 	margin: 5px 3px 0px 3px;
 }
@@ -615,7 +784,6 @@ h3 {
 	padding: 21px 10px 21px 10px;
 	font-size: 24px;
 	margin: 0;
-	
 }
 .news-section:last-of-type {
 	margin-bottom: 8px
@@ -626,9 +794,137 @@ h3 {
 	background-color: #173D42;
 	width: 50%;
 	height: 550px;
-	border: 2px solid #373A40
+	border: 2px solid #373A40;
+	border-bottom: none
+}
+#recentnews .carousel {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center
+}
+#recentnews ol {
+	margin-bottom: 0rem
+}
+#recentnews .carousel-indicators li {
+	height: 20px;
+	width: 20px;
+	background-color: white;
+	opacity: .5
+}
+#recentnews .carousel-indicators .active {
+	background-color: white;
+	opacity: 1
+}
+#recentnews .carousel-inner {
+	display: flex
+}
+#recentnews .carousel-item video {
+	width: 100%;
+	display: flex
+}
+#recentnews .carousel-item .active {
+	display: flex;
+	align-items: center
+}
+#recentnews .carousel-control-prev, #recentnews .carousel-control-next {
+	bottom: 50px;
+	align-items: flex-end
+}
+#recentnews .carousel-control-prev {
+	left: 36%
+}
+#recentnews .carousel-control-next {
+	right: 38%
+}
+#recentnews #container {
+	height: 345px;
+	margin-bottom: 40px;
+	display: flex
+}
+#recentnews .line img {
+	width: 76%
+}
+#recentnews p {
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-align: center;
+	padding: 21px 10px 21px 10px;
+	font-size: 24px;
+	margin: 0;
+}
+#recentnews .news-section {
+	height: 100%;
+	justify-content: center
+}
+#recentnews .newstext {
+	background-color: white;
+	height: 345px;
+	width: 90%;
+	border: 9px double #173D42;
+	margin: 0px 5% 40px 5%
 }
 
+/* RESUME */
+#resume {
+	background-color: #ba6e7a;
+	width: 50%;
+	height: 550px;
+	position: relative
+}
+#resume .cropped {
+	width: 100%;
+	height: 550px;
+	object-fit: cover;
+	object-position: -44px 10px
+}
+#resume img {
+	width: 500px;
+	height: auto
+}
+#resume #resumetext {
+	width: 130px;
+	position: absolute;
+	bottom: 120px;
+	right: 6%
+}
+h4 {
+	font-family: number-five-smooth, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	color: #BDBBC1;
+	font-size: 45px;
+	text-shadow: 0 0 8px #373A40
+}
+#resume h4 a {
+	font-family: number-five-smooth, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 45px;
+	color: #373A40;
+	text-shadow: 0 0 8px #BDBBC1
+}
+@media only screen and (min-width: 900px) {
+	#resume #resumetext {
+		width: 185px;
+		bottom: 72px
+	}
+	h4 {
+		font-size: 60px
+	}
+	#resume h4 a {
+		font-size: 60px
+	}
+}
+@media only screen and (min-width: 1000px) {
+	#resume #resumetext {
+		width: 317px;
+		bottom: 181px;
+		right: 0;
+		left: 18vw
+	}
+}
 
 /* CONTACT ME */
 /* MNM: added this style for footer*/

@@ -10,7 +10,6 @@
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="CSS/style.css">
 	<link rel="stylesheet" href="https://use.typekit.net/cif2wqi.css">
-	<link rel="stylesheet" type="text/javascript" href="css/javascript.js">
 	
 	<!-- FAVICON -->
 	<link rel="icon" href="img/favicon.png">
@@ -71,7 +70,7 @@
 </nav>
 	
 <!-- GALLERY -->
-<div id="mobilegallery" class="page-content">
+<section id="mobilegallery" class="page-content">
     <div id="galleryheader">
        	<video height="80px" id="galleryheadermobile" autoplay muted loop>
 			<source src="img/Gallery-mobile.mp4">
@@ -82,147 +81,226 @@
 	</div>
 		
 	<div id="gallerypics" class="d-flex flex-wrap">
+		<!-- Images  -->
 		<div class="row">
 			<div class="column">
-				<img src="img/img1_thumb.png" alt="Starlight Express" height="171px" width="171px" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				<div class="overlay">
+					<img src="img/1Headshot4.jpg" alt="Headshot" onclick="openModal();currentSlide(1)" class="hover-shadow">
+				</div>
 			</div>
 			<div class="column">
-				<img src="img/img2_thumb.png" alt="The Purrfect Crime" height ="171px" width="171px" onclick="openModal();currentSlide(2)" class="hover-shadow">
+				<div class="overlay">
+					<img src="img/2Headshot5.jpg" alt="Headshot" onclick="openModal();currentSlide(2)" class="hover-shadow">
+				</div>
 			</div>
 			<div class="column">
-				<img src="img/img3_thumb.png" alt="Little Women" height="171px" width="171px" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				<div class="overlay">
+					<img src="img/3Headshot3.jpg" alt="Headshot" onclick="openModal();currentSlide(3)" class="hover-shadow">
+				</div>
 			</div>
 			<div class="column">
-				<img src="img/img4_thumb.png" alt="Little Women" height="171px" width="171px" onclick="openModal();currentSlide(4)" class="hover-shadow">
+				<div class="overlay">
+					<img src="img/4Headshot6.jpg" alt="Headshot" onclick="openModal();currentSlide(4)" class="hover-shadow">
+				</div>
 			</div>
 			<div class="column">
-				<img src="img/img5_thumb.png" alt="Catch Me If You Can" height="171px" width="171px" onclick="openModal();currentSlide(5)" class="hover-shadow">
+				<div class="overlay">
+					<img src="img/24Headshot2.jpg" alt="Headshot" onclick="openModal();currentSlide(5)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/5Nightmare2.jpg" alt="The Actor's Nightmare" onclick="openModal();currentSlide(6)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/6Earnest1.png" alt="The Importance of Being Earnest" onclick="openModal();currentSlide(7)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/7-12Night2.jpg" alt="Twelfth Night" onclick="openModal();currentSlide(8)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/8CatchMe2.png" alt="Catch Me If You Can" onclick="openModal();currentSlide(9)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/9LittleWomen1.png" alt="Little Women" onclick="openModal();currentSlide(10)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/10Crime2.jpg" alt="The Purrfect Crime" onclick="openModal();currentSlide(11)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/11Starlight1.png" alt="Starlight Express" onclick="openModal();currentSlide(12)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/12Earnest2.jpg" alt="The Importance of Being Earnest" onclick="openModal();currentSlide(13)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/13Crime1.png" alt="The Purrfect Crime" onclick="openModal();currentSlide(14)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/15LittleWomen2.jpg" alt="Little Women" onclick="openModal();currentSlide(15)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/16LittleWomen4.png" alt="LittleWomen" onclick="openModal();currentSlide(16)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/18-12Night1.jpg" alt="Twelfth Night" onclick="openModal();currentSlide(17)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/20LittleWomen5.jpg" alt="Little Women" onclick="openModal();currentSlide(18)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/22Nightmare1.jpg" alt="The Actor's Nightmare" onclick="openModal();currentSlide(19)" class="hover-shadow">
+				</div>
+			</div>
+			<div class="column">
+				<div class="overlay">
+					<img src="img/17CatchMe1.jpg" alt="Catch Me If You Can" onclick="openModal();currentSlide(20)" class="hover-shadow">
+				</div>
 			</div>
 		</div>
-		
-		<button type="button" data-toggle="modal" data-target="#img1">
-			<img src="img/img1_thumb.png" alt="Starlight Express" height="171px" width="171px">
-		</button>
-		<div class="modal fade" id="img1" tabindex="-1" aria-labelledby="img1Label" aria-hidden="true" role="dialog">
-  			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-      				<div class="modal-header">
-        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          					<span aria-hidden="true">&times;</span>
-        				</button>
-     				</div>
-      				<div class="modal-body d-flex justify-content-center">
-      					<img src="img/img1_thumb.png" alt="Starlight Express" height="90%" width="90%">
-      				</div>
+		<!-- The Modal/Lightbox -->
+		<div id="gallerymodal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<img src="img/1Headshot4.jpg" alt="Headshot">
+				</div>
+				<div class="mySlides">
+					<img src="img/2Headshot5.jpg" alt="Headshot">
+				</div>
+				<div class="mySlides">
+					<img src="img/3Headshot3.jpg" alt="Headshot">
+				</div>
+				<div class="mySlides">
+					<img src="img/4Headshot6.jpg" alt="Headshot">
+				</div>
+				<div class="mySlides">
+					<img src="img/24Headshot2.jpg" alt="Headshot">
+				</div>
+				<div class="mySlides">
+					<img src="img/5Nightmare2.jpg" alt="The Actor's Nightmare">
 					<div class="modal-footer">
-						<h6>Starlight Express</h6>
+						<h6>The Actor's Nightmare</h6>
 					</div>
-    			</div>
-  			</div>
-		</div>
-		<button type="button" data-toggle="modal" data-target="#img2">
-			<img src="img/img2_thumb.png" alt="The Purrfect Crime" height="171px" width="171px">
-		</button>
-		<div class="modal fade" id="img2" tabindex="-1" aria-labelledby="img2Label" aria-hidden="true" role="dialog">
-  			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-      				<div class="modal-header">
-        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          					<span aria-hidden="true">&times;</span>
-        				</button>
-     				</div>
-      				<div class="modal-body d-flex justify-content-center">
-      					<img src="img/img2_thumb.png" alt="The Purrfect Crime" height="90%" width="90%">
-      				</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/6Earnest1.png" alt="The Importance of Being Earnest">
 					<div class="modal-footer">
-						<h6>The Purrfect Crime</h6>
+						<h6>The Importance of Being Earnest</h6>
 					</div>
-    			</div>
-  			</div>
-		</div>
-		<button type="button" data-toggle="modal" data-target="#img3">
-			<img src="img/img3_thumb.png" alt="Little Women" height="171px" width="171px">
-		</button>
-		<div class="modal fade" id="img3" tabindex="-1" aria-labelledby="img3Label" aria-hidden="true" role="dialog">
-  			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-      				<div class="modal-header">
-        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          					<span aria-hidden="true">&times;</span>
-        				</button>
-     				</div>
-      				<div class="modal-body d-flex justify-content-center">
-      					<img src="img/img3_thumb.png" alt="Little Women" height="90%" width="90%">
-      				</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/7-12Night2.jpg" alt="Twelfth Night">
+					<div class="modal-footer">
+						<h6>Twelfth Night</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/8CatchMe2.png" alt="Catch Me If You Can">
+					<div class="modal-footer">
+						<h6>Catch Me If You Can</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/9LittleWomen1.png" alt="Little Women">
 					<div class="modal-footer">
 						<h6>Little Women</h6>
 					</div>
 				</div>
-  			</div>
-		</div>
-		<button type="button" data-toggle="modal" data-target="#img4">
-			<img src="img/img4_thumb.png" alt="Little Women" height="171px" width="171px">
-		</button>
-		<div class="modal fade" id="img4" tabindex="-1" aria-labelledby="img4Label" aria-hidden="true" role="dialog">
-  			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-      				<div class="modal-header">
-        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          					<span aria-hidden="true">&times;</span>
-        				</button>
-     				</div>
-      				<div class="modal-body d-flex justify-content-center">
-      					<img src="img/img4_thumb.png" alt="Little Women" height="90%" width="90%">
-      				</div>
+				<div class="mySlides">
+					<img src="img/10Crime2.jpg" alt="The Purrfect Crime">
 					<div class="modal-footer">
-						<h6>Little Women</h6>
+						<h6>The Purrfect Crime</h6>
 					</div>
-    			</div>
-  			</div>
-		</div>
-		<button type="button" data-toggle="modal" data-target="#img5">
-			<img src="img/img5_thumb.png" alt="Catch Me If You Can" height="171px" width="171px">
-		</button>
-		<div class="modal fade" id="img5" tabindex="-1" aria-labelledby="img5Label" aria-hidden="true" role="dialog">
-  			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-      				<div class="modal-header">
-        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          					<span aria-hidden="true">&times;</span>
-        				</button>
-     				</div>
-      				<div class="modal-body d-flex justify-content-center">
-      					<img src="img/img5_thumb.png" alt="Catch Me If You Can" height="90%" width="90%">
-      				</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/11Starlight1.png" alt="Starlight Express">
 					<div class="modal-footer">
-						<h6>Catch Me If You Can</h6>
+						<h6>Starlight Express</h6>
 					</div>
-    			</div>
-  			</div>
-		</div>
-		<button type="button" data-toggle="modal" data-target="#img6">
-			<img src="img/img6_thumb.png" alt="The Importance of Being Earnest" height="171px" width="171px">
-		</button>
-		<div class="modal fade" id="img6" tabindex="-1" aria-labelledby="img6Label" aria-hidden="true" role="dialog">
-  			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content">
-      				<div class="modal-header">
-        				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          					<span aria-hidden="true">&times;</span>
-        				</button>
-     				</div>
-      				<div class="modal-body d-flex justify-content-center">
-      					<img src="img/img6_thumb.png" alt="The Importance of Being Earnest" height="90%" width="90%">
-      				</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/12Earnest2.jpg" alt="The Importance of Being Earnest">
 					<div class="modal-footer">
 						<h6>The Importance of Being Earnest</h6>
 					</div>
-    			</div>
-  			</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/13Crime1.png" alt="The Purrfect Crime">
+					<div class="modal-footer">
+						<h6>The Purrfect Crime</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/15LittleWomen2.jpg" alt="Little Women">
+					<div class="modal-footer">
+						<h6>Little Women</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/16LittleWomen4.png" alt="Little Women">
+					<div class="modal-footer">
+						<h6>Little Women</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/18-12Night1.jpg" alt="Twelfth Night">
+					<div class="modal-footer">
+						<h6>Twelfth Night</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/20LittleWomen5.jpg" alt="Little Women">
+					<div class="modal-footer">
+						<h6>Little Women</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/22Nightmare1.jpg" alt="The Actor's Nightmare">
+					<div class="modal-footer">
+						<h6>The Actor's Nightmare</h6>
+					</div>
+				</div>
+				<div class="mySlides">
+					<img src="img/17CatchMe1.jpg" alt="Catch Me If You Can">
+					<div class="modal-footer">
+						<h6>Catch Me If You Can</h6>
+					</div>
+				</div>
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
 		</div>
 	</div>
-</div>
-	
+</section>
+		
 <!-- CONTACT ME -->
 <footer id="contactme">
 	<ul class="list-group list-group-horizontal">
@@ -250,6 +328,7 @@
 	
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>		
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="CSS/plugin.js"></script>
 </body>
 </html>
