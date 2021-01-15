@@ -383,7 +383,7 @@ h2 {
 	object-fit: cover;
 	width: 23vw;
 	min-width: 100%;
-	height: auto;
+	height: 558px;
 }
 .carousel-control-prev:focus, .carousel-control-next:focus {
 	display: none
@@ -843,7 +843,8 @@ h3 {
 	display: flex
 }
 #recentnews .line img {
-	width: 76%
+	width: 76%;
+	height: 18px
 }
 #recentnews p {
 	font-family: futura-pt, sans-serif;

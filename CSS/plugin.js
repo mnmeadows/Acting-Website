@@ -1,4 +1,9 @@
 // JavaScript Document
+
+//SAFARI SMOOTH SCROLL
+
+
+// GALLERY MODAL
 // Open the Modal
 function openModal() {
 	document.getElementById("gallerymodal").style.display = "block";
