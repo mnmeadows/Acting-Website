@@ -771,7 +771,8 @@ h3 {
 	justify-content: center
 }
 #news img {
-	width: 76%
+	width: 76%;
+	height: 13px
 }
 .news-p {
 	align-content: center
