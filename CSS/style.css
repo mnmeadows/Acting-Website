@@ -620,21 +620,24 @@ h6 {
 #gallerypicsdesktop .column img:hover {
 	opacity: 0.7
 }
-#gallerypicsdesktop .row .medium, .large, .huge  {
+#gallerypicsdesktop .row .medium, .large, .x, .huge  {
 	display: none 
 }
-@media only screen and (min-width: 888px) {
+@media only screen and (min-width: 907px) {
 	#gallerypicsdesktop .row .medium {
 		display: flex;
 	}
 }
 @media only screen and (min-width: 1059px) {
+	#gallerypicsdesktop .row .x {
+		display: none;
+	}
 	#gallerypicsdesktop .row .large {
 		display: flex;
 	}
 }
-@media only screen and (min-width: 1230px) {
-	#gallerypicsdesktop .row .huge {
+@media only screen and (min-width: 1078px) {
+	#gallerypicsdesktop .row .x {
 		display: flex;
 	}
 }
@@ -643,7 +646,7 @@ h6 {
 		width: 228px !important;
 		height: 228px !important
 	}
-	#gallerypicsdesktop .row .x {
+	#gallerypicsdesktop .row .huge {
 		display: none
 	}
 }
