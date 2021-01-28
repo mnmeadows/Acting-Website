@@ -144,7 +144,7 @@ a:hover {
 	z-index: -1;
 	width: 450px;
 	align-content: center;
-	justify-content: center
+	justify-content: center;
 }
 h1 {
 	font-family: gill-sans-nova, sans-serif;
@@ -213,7 +213,7 @@ h2 {
 
 /* ABOUT ME */
 #mobileaboutme {
-	background-color: #FFDAC4;
+	background-color: #FBD6BC;
 	display: flex;
 	justify-content: center;
 	align-items: center
@@ -749,7 +749,7 @@ h6 {
 #recentnewsvideo {
 	display: flex;
 	justify-content: center;
-	background-color: #173D42
+	background-color: #15353a
 }
 h3 {
 	display: flex;
