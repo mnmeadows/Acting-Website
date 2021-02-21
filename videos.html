@@ -72,10 +72,10 @@
 <!-- VIDEOS -->
 <div id="mobilevideos" class="page-content">
     <div id="videoheader">
-       	<video height="80px" id="videoheadermobile" autoplay muted loop playsinline>
+       	<video height="80px" id="videoheadermobile" autoplay muted loop playsinline disableRemotePlayback>
 			<source src="img/Videos_Mobile.mp4">
 		</video>
-		<video height="80px" id="videoheaderlong" autoplay muted loop playsinline>
+		<video height="80px" id="videoheaderlong" autoplay muted loop playsinline disableRemotePlayback>
 			<source src="img/Videos_Mobilelong.mp4">
 		</video>
 	</div>
@@ -83,19 +83,25 @@
 	<div id="videocarousel" class="carousel slide" data-interval="false">
 		<ol class="carousel-indicators">
 			<li data-target="#videocarousel" data-slide-to="0" class="active">
-				<img src="img/thumbnail-movie.png" alt="img">
+				<img src="img/thumbnail-playfest.png" alt="img">
 			</li>
 			<li data-target="#videocarousel" data-slide-to="1">
-				<img src="img/thumbnail-mono2.png" alt="img">
+				<img src="img/thumbnail-movie.png" alt="img">
 			</li>
 			<li data-target="#videocarousel" data-slide-to="2">
-				<img src="img/thumbnail-mono1.png" alt="img">
+				<img src="img/thumbnail-mono2.png" alt="img">
 			</li>
 			<li data-target="#videocarousel" data-slide-to="3">
+				<img src="img/thumbnail-mono1.png" alt="img">
+			</li>
+			<li data-target="#videocarousel" data-slide-to="4">
 				<img src="img/thumbnail-catch.png" alt="img">
 			</li>
 		</ol>
 		<div class="carousel-inner">
+			<div class="carousel-item active">
+				<iframe src="https://www.youtube.com/embed/h7c10L9cgCY" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
 			<div class="carousel-item active">
 				<iframe src="https://www.youtube.com/embed/h4Dp6KGSjH4" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 			</div>

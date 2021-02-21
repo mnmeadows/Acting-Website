@@ -623,7 +623,7 @@ h6 {
 #gallerypicsdesktop .row .medium, .large, .x, .huge  {
 	display: none 
 }
-@media only screen and (min-width: 907px) {
+@media only screen and (min-width: 922px) {
 	#gallerypicsdesktop .row .medium {
 		display: flex;
 	}
@@ -636,7 +636,7 @@ h6 {
 		display: flex;
 	}
 }
-@media only screen and (min-width: 1078px) {
+@media only screen and (min-width: 1093px) {
 	#gallerypicsdesktop .row .x {
 		display: flex;
 	}
