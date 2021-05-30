@@ -261,25 +261,17 @@ h2 {
 	height: 373px;
 	padding: 0 5px 0 5px
 }
-.aboutme .carousel-item h5 {
+.aboutme .carousel-item p a {
 	font-family: futura-pt, sans-serif;
-	font-weight: 300;
-	font-style: normal;
-	color: #373A40;
-	font-size: 24px;
-	text-align: center;
-	padding: 67% 10px 0;
-	width: 233px;
-	height: 373px;
-}
-.aboutme .carousel-item h5 a {
-	font-family: number-five-smooth, sans-serif;
 	font-size: 33px;
-	padding-left: 5px;
-	color: #1F3F42;
+	color: white;
+	display: contents;
+	text-decoration: underline
 }
-.aboutme .carousel-item h5 a:hover {
-	opacity: .5
+.aboutme .carousel-item p a:hover {
+	opacity: .5;
+	color: #373A40;
+	text-decoration: none
 }
 .aboutme .carousel-control-prev {
 	margin-left: -16%;
@@ -752,7 +744,7 @@ h6 {
 #recentnewsvideo {
 	display: flex;
 	justify-content: center;
-	background-color: #15353a
+	background-color: #173d42
 }
 h3 {
 	display: flex;
@@ -795,7 +787,7 @@ h3 {
 
 /* DESKTOP */
 #recentnews {
-	background-color: #173D42;
+	background-color: #173d42;
 	width: 50%;
 	height: 550px;
 	border: 2px solid #373A40;
