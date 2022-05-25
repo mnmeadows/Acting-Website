@@ -580,6 +580,13 @@ h6 {
 	font-size: 23px;
 	letter-spacing: 1px
 }
+h7 {
+	color: #ffffff4a;
+	font-family: futura-pt, sans-serif;
+	font-weight: 300;
+	font-size: 16px;
+	margin-bottom: -1px !important
+}
 /* DESKTOP */
 #gallery {
 	flex: 1 1 auto;
@@ -615,20 +622,17 @@ h6 {
 #gallerypicsdesktop .row .medium, .large, .x, .huge  {
 	display: none 
 }
-@media only screen and (min-width: 922px) {
+@media only screen and (min-width: 937px) {
 	#gallerypicsdesktop .row .medium {
 		display: flex;
 	}
 }
-@media only screen and (min-width: 1059px) {
-	#gallerypicsdesktop .row .x {
-		display: none;
-	}
+@media only screen and (min-width: 1078px) {
 	#gallerypicsdesktop .row .large {
 		display: flex;
 	}
 }
-@media only screen and (min-width: 1093px) {
+@media only screen and (min-width: 1249px) {
 	#gallerypicsdesktop .row .x {
 		display: flex;
 	}
