@@ -1,10 +1,10 @@
 /* COLOR KEY
 Dark Gray: #373A40 
-Peach: #FFDAC4
-Red: #BA6E7A
-Greenish: #1F3F42
+Peach: #EDE2CF
+Red: #DA8573
+Greenish: #49654E
 Light gray: #BDBBC1
-Blue: #B2DED6
+Blue: #BADDE9
 Dark blue: #1A2D64 */
 /* FONTS
 font-family: number-five-smooth, sans-serif;
@@ -49,6 +49,13 @@ body {
  	overflow: auto;
 	flex: 1 1 auto
 }
+.flex-wrap {
+	overflow: auto
+}
+p {
+	word-break: break-word;
+	line-height: 45px
+}
 
 /* NAVIGATION BAR */
 /* MOBILE */
@@ -60,7 +67,7 @@ nav {
 	font-family: number-five-smooth, sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	color: #FFDAC4;
+	color: #EDE2CF;
 	font-size: 7vw;
 }
 .navbar-toggler:focus {
@@ -81,10 +88,10 @@ a {
 	color: white
 }
 a:hover {
-	color: #FFDAC4
+	color: #EDE2CF
 }
 #collapsibleNavbar .active {
-	color: #FFDAC4
+	color: #EDE2CF
 }
 
 /* DESKTOP  */
@@ -110,7 +117,7 @@ a:hover {
 		font-size: 3.2vw;
 	}
 	.navbar-nav a:hover {
-		color: #FFDAC4
+		color: #EDE2CF
 	}
 	.navbar-nav .separator {
 		border-left: thin solid #373A40
@@ -131,7 +138,7 @@ a:hover {
 
 /* HOME */
 #marissameadows {
-	background-color: #BA6E7A
+	background-color: #DA8573
 }
 /* MOBILE */
 .mainimage img {
@@ -142,7 +149,7 @@ a:hover {
 	margin-top: 24px;
 	position: relative;
 	z-index: -1;
-	width: 450px;
+	width: 310px;
 	align-content: center;
 	justify-content: center;
 }
@@ -150,8 +157,8 @@ h1 {
 	font-family: gill-sans-nova, sans-serif;
 	font-weight: bold;
 	font-style: normal;
-	color: #1F3F42;
-	text-shadow: 0 0 8px #FFFFFF;
+	color: #EDE2CF;
+	text-shadow: 1px 2px 6px #373A40;
 	font-size: 60px;
 	padding-bottom: 0px;
 	margin-bottom: 0px;
@@ -174,15 +181,15 @@ h2 {
 	align-content: center
 }
 @media (max-width: 528px){
-	.mainimage img {width: 80vw}
+	.mainimage img {width: 64vw}
 }
 .twolines {display: none}
 /* DESKTOP */
 @media only screen and (min-width: 768px) {
 	.mainimage img {
 		position: absolute;
-		left: 0px;
-		width: 640px
+		left: 8px;
+		width: 435px
 	}
 	h1 {
 		justify-content: flex-end;
@@ -213,14 +220,14 @@ h2 {
 
 /* ABOUT ME */
 #mobileaboutme {
-	background-color: #FBD6BC;
+	background-color: #F0E5D6;
 	display: flex;
 	justify-content: center;
 	align-items: center
 }
 .aboutme .carousel {
 	width: 241px;
-	height: 382px;
+	height: 482px;
 	border: thick solid #373A40;
 }
 .aboutme ol {
@@ -229,11 +236,11 @@ h2 {
 .aboutme .carousel-indicators li {
 	height: 20px;
 	width: 20px;
-	background-color: #1F3F42;
+	background-color: #FFFFFF;
 	opacity: .5;
 }
 .aboutme .carousel-indicators .active {
-	background-color: #1F3F42;
+	background-color: #FFFFFF;
 	opacity: 1
 }
 .aboutme .carousel-inner {
@@ -242,6 +249,7 @@ h2 {
 .aboutme .carousel-item video {
 	width: 231px;
 	display: flex;
+	height: 462px
 }
 #aboutme-mobile {
 	display: none
@@ -258,20 +266,20 @@ h2 {
 	justify-content: center;
 	align-items: center;
 	margin: 0;
-	height: 373px;
-	padding: 0 5px 0 5px
+	height: 462px;
+	padding: 0 5px 0 5px;
+	line-height: 33px
 }
 .aboutme .carousel-item p a {
 	font-family: futura-pt, sans-serif;
-	font-size: 33px;
+	font-size: 24px;
 	color: white;
 	display: contents;
 	text-decoration: underline
 }
 .aboutme .carousel-item p a:hover {
 	opacity: .5;
-	color: #373A40;
-	text-decoration: none
+	text-decoration: underline
 }
 .aboutme .carousel-control-prev {
 	margin-left: -16%;
@@ -288,14 +296,18 @@ h2 {
 	}
 	.aboutme .carousel {
 		width: 310px;
-		height: 373px
+		height: 485px
 	}
 	.aboutme .carousel-item video {
 		width: 300px
 	}
 	.aboutme .carousel-item p {
 		width: 300px;
-		height: 364px;
+		height: 485px;
+		font-size: 29px;
+		padding: 0 13px
+	}
+	.aboutme .carousel-item p a {
 		font-size: 29px
 	}
 	.aboutme .carousel-item h5 {
@@ -353,6 +365,10 @@ h2 {
 	.aboutme .carousel-item p {
 		width: 300px;
 		height: 519px;
+		font-size: 33px;
+		line-height: 38px
+	}
+	.aboutme .carousel-item p a {
 		font-size: 33px
 	}
 	.aboutme .carousel-item h5 {
@@ -364,7 +380,7 @@ h2 {
 }
 /* DESKTOP */
 #aboutme {
-	background-color: #FFDAC4;
+	background-color: #F0E5D7;
 	margin-top: 185px
 }
 .aboutme-row {
@@ -459,7 +475,7 @@ h2 {
 #mobilegallery {
 	flex: 1 1 auto;
 	overflow: auto;
-	background-color: #B2DED6;
+	background-color: #ACCDD9;
 }
 #galleryheader {
 	display: flex;
@@ -591,7 +607,7 @@ h7 {
 #gallery {
 	flex: 1 1 auto;
 	overflow: auto;
-	background-color: #B2DED6;
+	background-color: #ACCDD9;
 	border: 2px solid #373A40;
 	height: 754px
 }
@@ -656,7 +672,7 @@ h7 {
 #mobilevideos {
 	flex: 1 1 auto;
 	overflow: auto;
-	background-color: #FFDBC6;
+	background-color: #DA8573;
 }
 #videoheader {
 	display: flex;
@@ -718,7 +734,7 @@ h7 {
 }
 /* DESKTOP */
 #videos {
-	background-color: #FFDBC6;
+	background-color: #DC8575;
 	display: flex;
 	justify-content: center;
 	height: 534px;
@@ -748,22 +764,33 @@ h7 {
 #recentnewsvideo {
 	display: flex;
 	justify-content: center;
-	background-color: #173d42
+	background-color: #F0E8DB
 }
 h3 {
 	display: flex;
 	font-family: number-five-smooth, sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	color: #BDBBC1;
+	color: #DD8576;
 	justify-content: center;
 	margin: 0px;
 	padding-top: 12px;
 	font-size: 34px
 }
+hr {
+	width: 85%;
+	text-align: center;
+	border-top: 4px solid #DD8576;
+	margin-top: 4px;
+	margin-bottom: -2px
+}
+#news {
+	background-color: #F0E8DB
+}
 #news .news-section {
 	border: 9px double #173D42;
 	margin: 5px 3px 0px 3px;
+	background-color: white
 }
 .line {
 	display: flex;
@@ -784,6 +811,7 @@ h3 {
 	padding: 21px 10px 21px 10px;
 	font-size: 24px;
 	margin: 0;
+	line-height: 38px
 }
 .news-section:last-of-type {
 	margin-bottom: 8px
@@ -791,7 +819,7 @@ h3 {
 
 /* DESKTOP */
 #recentnews {
-	background-color: #173d42;
+	background-color: #F0E8DB;
 	width: 50%;
 	height: 550px;
 	border: 2px solid #373A40;
@@ -851,7 +879,7 @@ h3 {
 	font-weight: 300;
 	font-style: normal;
 	text-align: center;
-	padding: 21px 10px 21px 10px;
+	padding: 21px 10px 7px 10px;
 	font-size: 24px;
 	margin: 0;
 }
@@ -868,7 +896,7 @@ h3 {
 
 /* RESUME */
 #resume {
-	background-color: #ba6e7a;
+	background-color: #ACCDD9;
 	width: 50%;
 	height: 550px;
 	position: relative
@@ -893,17 +921,16 @@ h4 {
 	font-family: number-five-smooth, sans-serif;
 	font-style: normal;
 	font-weight: 400;
-	color: #BDBBC1;
+	color: #EDE2CF;
 	font-size: 45px;
-	text-shadow: 0 0 8px #373A40
 }
 #resume h4 a {
 	font-family: number-five-smooth, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	font-size: 45px;
-	color: #373A40;
-	text-shadow: 0 0 8px #BDBBC1
+	color: #DD8576;
+	text-shadow: 1px 1px 2px #373A40
 }
 @media only screen and (min-width: 900px) {
 	#resume #resumetext {
@@ -937,17 +964,19 @@ footer {
 	font-weight: bold;
 	font-style: normal;
 	border-width: thick;
-	border-color: #1F3F42;
+	border-color: #373A40;
 }
 #contactme ul a {
-	color: #1F3F42;
+	color: #373A40;
 	text-decoration: none;
 }
 #contactme ul a:hover {
-	color: #1F3F42
+	color: #373A40;
+	text-decoration: underline
 }
 #contactme ul img {
 	width: 40px;
+	margin-top: -5px
 }
 @media (max-width: 615px) {
 	#contactme .contacttext {display: none}
