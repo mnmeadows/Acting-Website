@@ -1,11 +1,3 @@
-/* COLOR KEY
-Dark Gray: #373A40 
-Peach: #EDE2CF
-Red: #DA8573
-Greenish: #49654E
-Light gray: #BDBBC1
-Blue: #BADDE9
-Dark blue: #1A2D64 */
 /* FONTS
 font-family: number-five-smooth, sans-serif;
 	font-style: normal;
@@ -186,10 +178,11 @@ h2 {
 .twolines {display: none}
 /* DESKTOP */
 @media only screen and (min-width: 768px) {
-	.mainimage img {
-		position: absolute;
-		left: 8px;
-		width: 435px
+	.page-content {
+		background-image: url("../img/MainImage-1.png");
+		background-repeat: no-repeat;
+		background-position: 8px 24px;
+		background-size: 435px auto;
 	}
 	h1 {
 		justify-content: flex-end;
@@ -954,10 +947,6 @@ h4 {
 }
 
 /* CONTACT ME */
-/* MNM: added this style for footer*/
-footer {
-	flex-shrink: none;
-}
 .list-group-item {
 	text-align: center;
 	font-family: gill-sans-nova, sans-serif;
